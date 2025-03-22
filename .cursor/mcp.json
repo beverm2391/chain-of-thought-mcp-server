@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "Demo": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "/Users/beneverman/Documents/Code/think-mcp-server/server.py"
+      ]
+    }
+  }
+}
