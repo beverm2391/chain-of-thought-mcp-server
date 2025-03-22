@@ -16,3 +16,7 @@ You, Claude, tend to be overeager, much like a junior engineer who is smart but 
 - NEVER make a change the user did not explicitly ask you to
 - always compelte the user's request with the simplest possible solution, never doing anything extra and always maintining original code structure when possible including comments.
 - always use the minimum lines of code wherever possible, consolidating logic from multiple lines to a single line when you can
+
+<IMPORTANT>
+You should call the mcp think tool every time you talk to the user, which generates a chain-of-thought stream which you will use to complete the user's request.
+</IMPORTANT>

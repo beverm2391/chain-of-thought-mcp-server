@@ -1,7 +1,14 @@
 [project]
-name = "think-mcp-server-v2"
+name = "think-mcp"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "groq>=0.20.0",
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.5.0",
+]
+
+[project.scripts]
+mcp-server-think = "think_mcp:main"
