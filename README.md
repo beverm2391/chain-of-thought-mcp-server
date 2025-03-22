@@ -1,6 +1,6 @@
-# Think MCP Server
+# Chain-of-Thought MCP Server
 
-Anthropics recent article ["The "think" tool: Enabling Claude to stop and think in complex tool use situations"](https://www.anthropic.com/engineering/claude-think-tool) shows that using an external `think` tool notable increases performance on [SWE Bench](https://www.swebench.com/).
+Anthropic's recent article ["The "think" tool: Enabling Claude to stop and think in complex tool use situations"](https://www.anthropic.com/engineering/claude-think-tool) shows that using an external `think` tool notably increases performance on [SWE Bench](https://www.swebench.com/).
 
 This MCP Server uses Groq's API to call LLMs which expose raw chain-of-thought tokens from Qwen's [qwq model](https://qwenlm.github.io/blog/qwq-32b/).
 
