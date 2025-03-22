@@ -8,3 +8,9 @@ dependencies = [
     "groq>=0.20.0",
     "mcp[cli]>=1.5.0",
 ]
+
+[dependency-groups]
+dev = [
+    "beautifulsoup4>=4.13.3",
+    "requests>=2.32.3",
+]
