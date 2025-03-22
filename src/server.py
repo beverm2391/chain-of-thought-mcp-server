@@ -1,5 +1,5 @@
 from typing import AsyncIterable, Dict, Any
-from .groq_client import GroqClient
+from groq_client import GroqClient
 from mcp.server.fastmcp import FastMCP
 
 async def process_stream(
@@ -30,7 +30,7 @@ async def process_stream(
     return output
 
 
-async def think_tool(prompt: str) -> str:
+async def cot(prompt: str) -> str:
     print(f"Thinking about {prompt}")
     try:
         models = ["deepseek-r1-distill-llama-70b", "qwen-qwq-32B"]
@@ -118,8 +118,8 @@ mcp = FastMCP("think")
 
 
 @mcp.tool()
-async def think(prompt: str) -> str:
-    return await think_tool(prompt)
+async def chain_of_thought(prompt: str) -> str:
+    return await cot(prompt)
 
-def main():
+if __name__ == "__main__":
     mcp.run(transport='stdio')
