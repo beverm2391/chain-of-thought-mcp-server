@@ -1,4 +1,4 @@
-# Chain-of-Thought MCP Server
+# Chain of Thought MCP Server
 
 Anthropic's recent article ["The "think" tool: Enabling Claude to stop and think in complex tool use situations"](https://www.anthropic.com/engineering/claude-think-tool) shows that using an external `think` tool notably increases performance on [SWE Bench](https://www.swebench.com/).
 
