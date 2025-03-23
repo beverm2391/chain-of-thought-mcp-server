@@ -7,11 +7,12 @@ This MCP Server uses Groq's API to call LLMs which expose raw chain-of-thought t
 ## Installation 
 
 1. Clone this repository to your local machine.
-2. Get a Groq API key from [here](https://console.groq.com/keys).
-3. Update your mcp configuration with:
+2. Run ```uv sync``` to install depencies
+3. Get a Groq API key from [here](https://console.groq.com/keys).
+4. Update your mcp configuration with:
 
 ```json
-"mcp_servers": {
+"mcpServers": {
   "chain_of_thought": {
     "command": "uv",
     "args": [
