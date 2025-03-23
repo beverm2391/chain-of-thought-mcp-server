@@ -11,7 +11,7 @@ This MCP Server uses Groq's API to call LLMs which expose raw chain-of-thought t
 3. Update your mcp configuration with:
 
 ```json
-"mcp_servers": {
+"McpServers": {
   "chain_of_thought": {
     "command": "uv",
     "args": [
